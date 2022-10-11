@@ -1,0 +1,5 @@
+// Add custom message to Woocommerce cart page - Checkout
+add_action( 'woocommerce_review_order_before_submit', 'shop_message_checkout', 20 );
+function shop_message_checkout() {
+echo '<p class="woocommerce-message">Estimated delivery time: 24 - 48 hours - From Monday to Friday.</br>We do not deliver on Saturdays and Sundays to guarantee the freshness of the products.</br>If you have any questions, please contact us: info@mywebsite.com</p>'; 
+}
